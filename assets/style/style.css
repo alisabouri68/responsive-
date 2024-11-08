@@ -1,0 +1,337 @@
+header {
+  background-image: url(../img/gunrange-home-main-bg.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  /* height: 55vh; */
+  &::after {
+    content: "";
+    width: 100%;
+    height: 120px;
+    background-image: url(../img/gunrange-section-1-bottom-decor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  > .container {
+    > .row {
+      > div {
+        > nav {
+          background-color: var(--one-color);
+        }
+        &:nth-child(2) {
+          > div {
+            > h1 {
+              font-size: 5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+main {
+  > section {
+    &:nth-child(1) {
+      background-image: url(../img/bgd1.jpg);
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+
+      > .container {
+        > .row {
+          > div {
+            &:nth-child(1) {
+            }
+            &:nth-child(2) {
+              background-color: #686c58;
+              background-image: url(../img/gunrange-bullets-bg.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: right bottom;
+              height: 880px;
+              > .container {
+                > .row {
+                  > div {
+                    > img {
+                    }
+                    > div {
+                      > h5 {
+                      }
+                      > p {
+                      }
+                      > a {
+                        background-color: var(--one-color);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      background-image: url(../img/bgd2.jpg);
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      > .container {
+        > .row {
+          > div {
+            &:nth-child(1) {
+              > div {
+                > img {
+                }
+                > p {
+                }
+              }
+            }
+            &:nth-child(2) {
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(3) {
+      background-color: #cac7c1;
+      /* height: 100vh; */
+      > .container {
+        > .row {
+          > div {
+            &:nth-child(1) {
+            }
+            &:nth-child(2) {
+            }
+            &:nth-child(3) {
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(4) {
+      width: 100vw;
+      position: relative;
+      z-index: 100;
+      background-image: url(../img/gunrange-arsenal-bg.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 120px;
+        background-image: url(../img/xxx.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+      }
+      > div {
+      }
+    }
+    &:nth-child(5) {
+      width: 100vw;
+      background-image: url(../img/gunrange-arsenal-bg.png);
+      > .container {
+        > .row {
+          > div {
+            > div {
+              > h4 {
+              }
+
+              > div {
+                > img {
+                }
+                > p {
+                }
+                > div {
+                }
+                > .bar {
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  width: 100%;
+                  height: 2px;
+                  background-color: rgb(70, 68, 68);
+                  > span {
+                    width: 60%;
+                    height: 2px;
+                  }
+
+                  > div {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(6){
+      background-image: url(../img/gunrange-pattern.png);
+      .container{
+        >.row{
+          display: grid;
+          grid-template-columns: repeat(20 , 5%);
+          grid-template-rows: repeat(22 , auto);
+          gap: 15px 0;
+          >div{
+            overflow: hidden;
+            &:nth-child(1){
+              grid-area: 2 / 3 / 8 / 10 ;
+            }
+            &:nth-child(2){
+              grid-area: 2 / 11 / 5 / 17 ;
+              transform: translate(0 , -50px);
+
+            }
+            &:nth-child(3){
+              grid-area: 4 / 11 / 8 / 19 ;
+
+            }
+            &:nth-child(4){
+              grid-area: 9 / 1 / 16 / 10 ;
+
+            }
+            &:nth-child(5){
+              grid-area: 9 / 11 / 16 / 21 ;
+
+            }
+            &:nth-child(6){
+              grid-area: 17 / 3 / 21 / 8 ;
+
+            }
+            &:nth-child(7){
+              grid-area: 17 / 9 / 21 / 16 ;
+
+            }
+            &:nth-child(8){
+              grid-area: 21 / 1 / 23 / 21 ;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            >img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              /* transition:all 0.4s linear; */
+              &:hover{
+                /* transform: scale(1.1); */
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+
+  background-image: url(../img/gunrange-footer-pattern.png);
+  >.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >div{
+      >div{
+        >div{
+          >div{
+            >a{
+              >span{
+                >svg{
+                  fill: black ;
+                  &:hover{
+                    width: 1.5rem;
+                  }
+  
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  >svg{
+  }
+}
+@media screen and (max-width: 576px) {
+  .card-5 {
+    width: 100%;
+  }
+  .card-6 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+}
+@media screen and (max-width: 767px) {
+  .galery-item1{
+    grid-area: 1 / 1 / 3 / 21 !important;
+
+  }
+  .galery-item2{
+    grid-area: 3 / 1 / 6 / 21 !important;
+    transform: translate(0,0) !important;
+  }
+  .galery-item3{
+    grid-area: 6 / 1 / 9 / 21 !important;
+
+  }
+  .galery-item4{
+    grid-area: 9 / 1 / 12 / 21 !important;
+
+  }
+  .galery-item5{
+    grid-area: 12 / 1 / 15 / 21 !important;
+
+  }
+  .galery-item6{
+    grid-area: 15 / 1 / 18 / 21 !important;
+
+  }
+  .galery-item7{
+    grid-area: 18 / 1 / 19 / 21 !important;
+
+  }
+  .galery-item8{
+    grid-area: 19 / 1 / 21 / 21 !important;
+
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    min-height: 100vh;
+  }
+  .card-5 {
+    width: 25%;
+  }
+  .card-6 {
+    width: 75%;
+  }
+  .card-1 {
+    transform: translate(0, -100px);
+  }
+  .card-3 {
+    transform: translate(0, 100px);
+  }
+  .card-4 {
+    transform: translate(0, 200px);
+  }
+  .section-3 {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1400px) {
+  .card-1 {
+    transform: translate(0, -100px);
+  }
+}
